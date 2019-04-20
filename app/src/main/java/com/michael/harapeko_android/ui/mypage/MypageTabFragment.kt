@@ -8,9 +8,9 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import com.michael.harapeko_android.R
 import com.michael.harapeko_android.databinding.MypageTabFragmentBinding
+import com.michael.harapeko_android.ui.agree_peko.AgreePekoActivity
 import com.michael.harapeko_android.ui.my_peko.MyPekoActivity
 
 class MypageTabFragment : Fragment() {
@@ -45,7 +45,7 @@ class MypageTabFragment : Fragment() {
             startActivity(Intent(activity, MyPekoActivity::class.java))
           }
           MypageListType.AgreePeko -> {
-            Toast.makeText(context, "tap, item agree peko", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(activity, AgreePekoActivity::class.java))
           }
         }
       }

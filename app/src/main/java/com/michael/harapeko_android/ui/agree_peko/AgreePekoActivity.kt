@@ -1,22 +1,22 @@
-package com.michael.harapeko_android.ui.my_peko
+package com.michael.harapeko_android.ui.agree_peko
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import com.michael.harapeko_android.R
 
-class MyPekoActivity : AppCompatActivity() {
+class AgreePekoActivity : AppCompatActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.my_peko_activity)
+    setContentView(R.layout.agree_peko_activity)
 
-    val fragment = MyPekoFragment.newInstance()
+    val fragment = AgreePekoFragment.newInstance()
     supportFragmentManager.beginTransaction()
         .replace(R.id.containerLayout, fragment)
         .commit()
 
-    supportActionBar?.title = "マイペコ"
+    supportActionBar?.title = "マッチペコ"
     supportActionBar?.setDisplayHomeAsUpEnabled(true)
   }
 
