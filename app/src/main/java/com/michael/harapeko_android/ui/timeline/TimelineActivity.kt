@@ -7,6 +7,7 @@ import android.view.Menu
 import android.view.MenuItem
 import com.michael.harapeko_android.R
 import com.michael.harapeko_android.databinding.TimelineActivityBinding
+import com.michael.harapeko_android.ui.mypage.MypageFragment
 
 class TimelineActivity : AppCompatActivity() {
 
@@ -28,8 +29,10 @@ class TimelineActivity : AppCompatActivity() {
           true
         }
         R.id.tab_mypage -> {
-          // TODO: set mypage
-
+          val fragment = MypageFragment.newInstance()
+          supportFragmentManager.beginTransaction()
+              .replace(R.id.containerLayout, fragment)
+              .commit()
           true
         }
         else -> {
