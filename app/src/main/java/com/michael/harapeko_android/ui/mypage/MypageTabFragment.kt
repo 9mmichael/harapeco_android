@@ -1,5 +1,6 @@
 package com.michael.harapeko_android.ui.mypage
 
+import android.content.Intent
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -10,6 +11,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.michael.harapeko_android.R
 import com.michael.harapeko_android.databinding.MypageTabFragmentBinding
+import com.michael.harapeko_android.ui.my_peko.MyPekoActivity
 
 class MypageTabFragment : Fragment() {
 
@@ -38,7 +40,14 @@ class MypageTabFragment : Fragment() {
 
     adapter.onClickListener = object : MypageAdapter.OnClickMypageListItemListener {
       override fun onClickRoot() {
-        Toast.makeText(context, "tap, item root", Toast.LENGTH_SHORT).show()
+        when (mypageListType) {
+          MypageListType.MyPeko -> {
+            startActivity(Intent(activity, MyPekoActivity::class.java))
+          }
+          MypageListType.AgreePeko -> {
+            Toast.makeText(context, "tap, item agree peko", Toast.LENGTH_SHORT).show()
+          }
+        }
       }
     }
     binding.recyclerView.layoutManager = LinearLayoutManager(activity)
@@ -88,6 +97,8 @@ class MypageTabFragment : Fragment() {
         })
       }
     }
+
+
 
   }
 
