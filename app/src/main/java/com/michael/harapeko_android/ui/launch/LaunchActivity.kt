@@ -15,5 +15,7 @@ class LaunchActivity : AppCompatActivity() {
     supportFragmentManager.beginTransaction()
         .replace(R.id.containerLayout, fragment)
         .commit()
+
+    supportActionBar?.title = ""
   }
 }
