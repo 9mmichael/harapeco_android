@@ -10,14 +10,14 @@ import android.view.View
 import android.view.ViewGroup
 import com.qmmichael.harapeco_android.R
 import com.qmmichael.harapeco_android.databinding.MypageTabFragmentBinding
-import com.qmmichael.harapeco_android.ui.agree_peko.AgreePekoActivity
-import com.qmmichael.harapeco_android.ui.my_peko.MyPekoActivity
+import com.qmmichael.harapeco_android.ui.agree_peco.AgreePecoActivity
+import com.qmmichael.harapeco_android.ui.my_peco.MyPecoActivity
 
 class MypageTabFragment : Fragment() {
 
   enum class MypageListType {
-    MyPeko,
-    AgreePeko
+    MyPeco,
+    AgreePeco
   }
 
   private lateinit var binding: MypageTabFragmentBinding
@@ -41,11 +41,11 @@ class MypageTabFragment : Fragment() {
     adapter.onClickListener = object : MypageAdapter.OnClickMypageListItemListener {
       override fun onClickRoot() {
         when (mypageListType) {
-          MypageListType.MyPeko -> {
-            startActivity(Intent(activity, MyPekoActivity::class.java))
+          MypageListType.MyPeco -> {
+            startActivity(Intent(activity, MyPecoActivity::class.java))
           }
-          MypageListType.AgreePeko -> {
-            startActivity(Intent(activity, AgreePekoActivity::class.java))
+          MypageListType.AgreePeco -> {
+            startActivity(Intent(activity, AgreePecoActivity::class.java))
           }
         }
       }
@@ -53,32 +53,32 @@ class MypageTabFragment : Fragment() {
     binding.recyclerView.layoutManager = LinearLayoutManager(activity)
     binding.recyclerView.adapter = adapter
 
-    val myPekoList = listOf(
-        Peko(
+    val myPecoList = listOf(
+        Peco(
             null, "あああああ", "11:11", 1
         ),
-        Peko(
+        Peco(
             null, "いいいいい", "22:22", 0
         ),
-        Peko(
+        Peco(
             null, "ううううう", "33:33", 100
         )
     )
-    val agreePekoList = listOf(
-        Peko(
+    val agreePecoList = listOf(
+        Peco(
             null, "かかかかか", "11:11", 1
         ),
-        Peko(
+        Peco(
             null, "ききききき", "22:22", 0
         ),
-        Peko(
+        Peco(
             null, "くくくくく", "33:33", 100
         )
     )
     when (mypageListType) {
-      MypageListType.MyPeko -> {
-        adapter.pekoList.addAll(myPekoList.map {
-          Peko(
+      MypageListType.MyPeco -> {
+        adapter.pecoList.addAll(myPecoList.map {
+          Peco(
               it.imageUrl,
               it.userName,
               it.postTime,
@@ -86,9 +86,9 @@ class MypageTabFragment : Fragment() {
           )
         })
       }
-      MypageListType.AgreePeko -> {
-        adapter.pekoList.addAll(agreePekoList.map {
-          Peko(
+      MypageListType.AgreePeco -> {
+        adapter.pecoList.addAll(agreePecoList.map {
+          Peco(
               it.imageUrl,
               it.userName,
               it.postTime,

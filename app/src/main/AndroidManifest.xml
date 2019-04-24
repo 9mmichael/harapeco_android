@@ -17,8 +17,8 @@
       </intent-filter>
     </activity>
     <activity android:name=".ui.timeline.TimelineActivity"/>
-    <activity android:name=".ui.my_peko.MyPekoActivity"/>
-    <activity android:name=".ui.agree_peko.AgreePekoActivity"/>
+    <activity android:name=".ui.my_peco.MyPecoActivity"/>
+    <activity android:name=".ui.agree_peco.AgreePecoActivity"/>
   </application>
 
 </manifest>

@@ -14,8 +14,8 @@ class MypageTabFragmentPagerAdapter(fragmentManager: FragmentManager) : Fragment
 
   override fun getItem(position: Int): Fragment? =
     when (position) {
-      0 -> MypageTabFragment.newInstance(MypageListType.MyPeko)
-      1 -> MypageTabFragment.newInstance(MypageListType.AgreePeko)
+      0 -> MypageTabFragment.newInstance(MypageListType.MyPeco)
+      1 -> MypageTabFragment.newInstance(MypageListType.AgreePeco)
       else -> null
     }
 

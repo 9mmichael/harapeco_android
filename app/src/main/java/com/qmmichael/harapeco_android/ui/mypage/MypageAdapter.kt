@@ -9,7 +9,7 @@ import com.bumptech.glide.request.RequestOptions
 import com.qmmichael.harapeco_android.R
 import com.qmmichael.harapeco_android.databinding.MypageListItemBinding
 
-data class Peko(
+data class Peco(
   val imageUrl: String?,
   val userName: String,
   val postTime: String,
@@ -17,7 +17,7 @@ data class Peko(
 )
 
 class MypageAdapter : RecyclerView.Adapter<MypageAdapter.MypageViewHolder>() {
-  val pekoList = ArrayList<Peko>()
+  val pecoList = ArrayList<Peco>()
   lateinit var onClickListener: OnClickMypageListItemListener
 
   override fun onCreateViewHolder(
@@ -37,8 +37,8 @@ class MypageAdapter : RecyclerView.Adapter<MypageAdapter.MypageViewHolder>() {
     holder: MypageViewHolder,
     position: Int
   ) {
-    val item = pekoList[position]
-    holder.binding.peko = item
+    val item = pecoList[position]
+    holder.binding.peco = item
 
     holder.binding.root.setOnClickListener {
       onClickListener.onClickRoot()
@@ -51,7 +51,7 @@ class MypageAdapter : RecyclerView.Adapter<MypageAdapter.MypageViewHolder>() {
         .into(holder.binding.itemImageView)
   }
 
-  override fun getItemCount(): Int = pekoList.size
+  override fun getItemCount(): Int = pecoList.size
 
   inner class MypageViewHolder(val binding: MypageListItemBinding) : RecyclerView.ViewHolder(
       binding.root

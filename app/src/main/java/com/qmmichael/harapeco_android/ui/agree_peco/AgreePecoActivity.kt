@@ -1,17 +1,17 @@
-package com.qmmichael.harapeco_android.ui.agree_peko
+package com.qmmichael.harapeco_android.ui.agree_peco
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import com.qmmichael.harapeco_android.R
 
-class AgreePekoActivity : AppCompatActivity() {
+class AgreePecoActivity : AppCompatActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.agree_peko_activity)
+    setContentView(R.layout.agree_peco_activity)
 
-    val fragment = AgreePekoFragment.newInstance()
+    val fragment = AgreePecoFragment.newInstance()
     supportFragmentManager.beginTransaction()
         .replace(R.id.containerLayout, fragment)
         .commit()

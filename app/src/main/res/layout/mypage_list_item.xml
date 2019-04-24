@@ -4,8 +4,8 @@
     >
   <data>
     <variable
-        name="peko"
-        type="com.qmmichael.harapeco_android.ui.mypage.Peko"
+        name="peco"
+        type="com.qmmichael.harapeco_android.ui.mypage.Peco"
         />
   </data>
 
@@ -35,7 +35,7 @@
             android:id="@+id/item_user_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{peko.userName}"
+            android:text="@{peco.userName}"
             android:textColor="@color/black"
             android:textStyle="bold"
             tools:text="ユーザー名"
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/item_user_name"
             android:layout_marginTop="8dp"
-            android:text="@{peko.postTime}"
+            android:text="@{peco.postTime}"
             android:textColor="@color/black"
             android:textSize="12sp"
             tools:text="〇〇分前"
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/item_post_time"
             android:layout_marginTop="4dp"
-            android:text="@{String.valueOf(peko.participant)}"
+            android:text="@{String.valueOf(peco.participant)}"
             android:textColor="@color/black"
             android:textSize="12sp"
             />

@@ -1,4 +1,4 @@
-package com.qmmichael.harapeco_android.ui.my_peko
+package com.qmmichael.harapeco_android.ui.agree_peco
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
@@ -11,19 +11,19 @@ import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.qmmichael.harapeco_android.R
-import com.qmmichael.harapeco_android.databinding.MyPekoFragmentBinding
+import com.qmmichael.harapeco_android.databinding.AgreePecoFragmentBinding
 import com.qmmichael.harapeco_android.model.TimelineItem
 
-class MyPekoFragment : Fragment() {
-  private lateinit var binding: MyPekoFragmentBinding
-  private val adapter = MyPekoAdapter()
+class AgreePecoFragment : Fragment() {
+  private lateinit var binding: AgreePecoFragmentBinding
+  private val adapter = AgreePecoAdapter()
 
   override fun onCreateView(
     inflater: LayoutInflater,
     container: ViewGroup?,
     savedInstanceState: Bundle?
   ): View? {
-    binding = DataBindingUtil.inflate(inflater, R.layout.my_peko_fragment, container, false)
+    binding = DataBindingUtil.inflate(inflater, R.layout.agree_peco_fragment, container, false)
 
     return binding.root
   }
@@ -31,20 +31,16 @@ class MyPekoFragment : Fragment() {
   override fun onActivityCreated(savedInstanceState: Bundle?) {
     super.onActivityCreated(savedInstanceState)
 
-    adapter.onClickListener = object : MyPekoAdapter.OnClickMyPekoJoinItemListener {
-      override fun onClickDenyButton() {
-        Toast.makeText(context, "tap, item deny button", Toast.LENGTH_SHORT).show()
-      }
-
-      override fun onClickAllowButton() {
-        Toast.makeText(context, "tap, item allow button", Toast.LENGTH_SHORT).show()
+    adapter.onClickListener = object : AgreePecoAdapter.OnClickAgreePecoItemListener {
+      override fun onClickImageView() {
+        Toast.makeText(context, "tap, item image view", Toast.LENGTH_SHORT).show()
       }
     }
 
-    binding.recyclerView.layoutManager = LinearLayoutManager(activity)
+    binding.recyclerView.layoutManager = LinearLayoutManager(context)
     binding.recyclerView.adapter = adapter
 
-    val myPekoList = listOf(
+    val agreePecoList = listOf(
         TimelineItem(
             null, "aaaaaaaa", "11:11"
         ),
@@ -55,7 +51,7 @@ class MyPekoFragment : Fragment() {
             null, "cccccccc", "33:33"
         )
     )
-    adapter.myPekoList.addAll(myPekoList.map {
+    adapter.agreePecoList.addAll(agreePecoList.map {
       TimelineItem(
           it.imageUrl,
           it.userName,
@@ -63,10 +59,10 @@ class MyPekoFragment : Fragment() {
       )
     })
 
-    val myPeko = TimelineItem(null, "おおおお", "11:11")
-    binding.timelineItem = myPeko
+    val parentPeco = TimelineItem(null, "aaaaaaaa", "11:11")
+    binding.timelineItem = parentPeco
 
-    val image = myPeko.imageUrl ?: R.mipmap.ic_launcher
+    val image = parentPeco.imageUrl ?: R.mipmap.ic_launcher
     Glide.with(binding.root)
         .load(image)
         .apply(RequestOptions.circleCropTransform())
@@ -74,6 +70,6 @@ class MyPekoFragment : Fragment() {
   }
 
   companion object {
-    fun newInstance() = MyPekoFragment()
+    fun newInstance() = AgreePecoFragment()
   }
 }
