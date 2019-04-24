@@ -1,9 +1,9 @@
-package com.michael.harapeko_android.ui.agree_peko
+package com.qmmichael.harapeco_android.ui.agree_peko
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
-import com.michael.harapeko_android.R
+import com.qmmichael.harapeco_android.R
 
 class AgreePekoActivity : AppCompatActivity() {
 

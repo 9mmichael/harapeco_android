@@ -1,4 +1,4 @@
-package com.michael.harapeko_android.ui.mypage
+package com.qmmichael.harapeco_android.ui.mypage
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
@@ -8,8 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.michael.harapeko_android.R
-import com.michael.harapeko_android.databinding.MypageFragmentBinding
+import com.qmmichael.harapeco_android.R
+import com.qmmichael.harapeco_android.databinding.MypageFragmentBinding
 
 class MypageFragment : Fragment() {
   private lateinit var binding: MypageFragmentBinding

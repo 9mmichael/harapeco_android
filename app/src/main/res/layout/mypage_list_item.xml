@@ -5,7 +5,7 @@
   <data>
     <variable
         name="peko"
-        type="com.michael.harapeko_android.ui.mypage.Peko"
+        type="com.qmmichael.harapeco_android.ui.mypage.Peko"
         />
   </data>
 

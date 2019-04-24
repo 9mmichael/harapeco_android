@@ -1,4 +1,4 @@
-package com.michael.harapeko_android.ui.launch
+package com.qmmichael.harapeco_android.ui.launch
 
 import android.content.Intent
 import android.databinding.DataBindingUtil
@@ -7,9 +7,9 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.michael.harapeko_android.R
-import com.michael.harapeko_android.databinding.LaunchFragmentBinding
-import com.michael.harapeko_android.ui.timeline.TimelineActivity
+import com.qmmichael.harapeco_android.R
+import com.qmmichael.harapeco_android.databinding.LaunchFragmentBinding
+import com.qmmichael.harapeco_android.ui.timeline.TimelineActivity
 
 class LaunchFragment : Fragment() {
   private lateinit var binding: LaunchFragmentBinding

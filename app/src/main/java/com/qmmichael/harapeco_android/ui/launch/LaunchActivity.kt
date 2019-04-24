@@ -1,9 +1,9 @@
-package com.michael.harapeko_android.ui.launch
+package com.qmmichael.harapeco_android.ui.launch
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import com.michael.harapeko_android.R
-import com.michael.harapeko_android.R.layout
+import com.qmmichael.harapeco_android.R
+import com.qmmichael.harapeco_android.R.layout
 
 class LaunchActivity : AppCompatActivity() {
 

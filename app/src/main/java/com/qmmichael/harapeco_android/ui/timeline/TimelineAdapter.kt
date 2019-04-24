@@ -1,4 +1,4 @@
-package com.michael.harapeko_android.ui.timeline
+package com.qmmichael.harapeco_android.ui.timeline
 
 import android.databinding.DataBindingUtil
 import android.support.v7.widget.RecyclerView
@@ -6,10 +6,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.michael.harapeko_android.R
-import com.michael.harapeko_android.databinding.TimelineItemBinding
-import com.michael.harapeko_android.model.TimelineItem
-import com.michael.harapeko_android.ui.timeline.TimelineAdapter.TimelineViewHolder
+import com.qmmichael.harapeco_android.R
+import com.qmmichael.harapeco_android.databinding.TimelineItemBinding
+import com.qmmichael.harapeco_android.model.TimelineItem
+import com.qmmichael.harapeco_android.ui.timeline.TimelineAdapter.TimelineViewHolder
 
 class TimelineAdapter() : RecyclerView.Adapter<TimelineViewHolder>() {
   val timelineList = ArrayList<TimelineItem>()

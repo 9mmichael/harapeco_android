@@ -1,4 +1,4 @@
-package com.michael.harapeko_android
+package com.michael.harapeco_android
 
 import org.junit.Test
 

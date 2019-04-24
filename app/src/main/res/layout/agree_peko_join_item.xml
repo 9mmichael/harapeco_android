@@ -5,7 +5,7 @@
   <data>
     <variable
         name="timelineItem"
-        type="com.michael.harapeko_android.model.TimelineItem"
+        type="com.qmmichael.harapeco_android.model.TimelineItem"
         />
   </data>
 

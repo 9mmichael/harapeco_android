@@ -1,4 +1,4 @@
-package com.michael.harapeko_android.model
+package com.qmmichael.harapeco_android.model
 
 data class TimelineItem (
   val imageUrl: String?,

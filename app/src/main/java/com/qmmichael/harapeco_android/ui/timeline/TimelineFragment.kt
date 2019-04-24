@@ -1,4 +1,4 @@
-package com.michael.harapeko_android.ui.timeline
+package com.qmmichael.harapeco_android.ui.timeline
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
@@ -8,9 +8,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import com.michael.harapeko_android.R
-import com.michael.harapeko_android.databinding.TimelineFragmentBinding
-import com.michael.harapeko_android.model.TimelineItem
+import com.qmmichael.harapeco_android.R
+import com.qmmichael.harapeco_android.databinding.TimelineFragmentBinding
+import com.qmmichael.harapeco_android.model.TimelineItem
 
 class TimelineFragment : Fragment() {
   private lateinit var binding: TimelineFragmentBinding

@@ -1,4 +1,4 @@
-package com.michael.harapeko_android.ui.mypage
+package com.qmmichael.harapeco_android.ui.mypage
 
 import android.databinding.DataBindingUtil
 import android.support.v7.widget.RecyclerView
@@ -6,8 +6,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.michael.harapeko_android.R
-import com.michael.harapeko_android.databinding.MypageListItemBinding
+import com.qmmichael.harapeco_android.R
+import com.qmmichael.harapeco_android.databinding.MypageListItemBinding
 
 data class Peko(
   val imageUrl: String?,

@@ -1,4 +1,4 @@
-package com.michael.harapeko_android.ui.mypage
+package com.qmmichael.harapeco_android.ui.mypage
 
 import android.content.Intent
 import android.databinding.DataBindingUtil
@@ -8,10 +8,10 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.michael.harapeko_android.R
-import com.michael.harapeko_android.databinding.MypageTabFragmentBinding
-import com.michael.harapeko_android.ui.agree_peko.AgreePekoActivity
-import com.michael.harapeko_android.ui.my_peko.MyPekoActivity
+import com.qmmichael.harapeco_android.R
+import com.qmmichael.harapeco_android.databinding.MypageTabFragmentBinding
+import com.qmmichael.harapeco_android.ui.agree_peko.AgreePekoActivity
+import com.qmmichael.harapeco_android.ui.my_peko.MyPekoActivity
 
 class MypageTabFragment : Fragment() {
 

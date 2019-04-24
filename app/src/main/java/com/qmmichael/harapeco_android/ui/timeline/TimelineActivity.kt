@@ -1,13 +1,13 @@
-package com.michael.harapeko_android.ui.timeline
+package com.qmmichael.harapeco_android.ui.timeline
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import com.michael.harapeko_android.R
-import com.michael.harapeko_android.databinding.TimelineActivityBinding
-import com.michael.harapeko_android.ui.mypage.MypageFragment
+import com.qmmichael.harapeco_android.R
+import com.qmmichael.harapeco_android.databinding.TimelineActivityBinding
+import com.qmmichael.harapeco_android.ui.mypage.MypageFragment
 
 class TimelineActivity : AppCompatActivity() {
 
