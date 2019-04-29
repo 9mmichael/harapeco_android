@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "841406691109",
+    "firebase_url": "https://harapeco-dev-ae301.firebaseio.com",
+    "project_id": "harapeco-dev-ae301",
+    "storage_bucket": "harapeco-dev-ae301.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841406691109:android:c79ab5f8057737b6",
+        "android_client_info": {
+          "package_name": "com.qmmichael.harapeco_android.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841406691109-m7cidopto7b97tsv9ceg80u353dopes9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.qmmichael.harapeco_android.debug",
+            "certificate_hash": "7cd086a51afd9e52873d13b021a18935cb372133"
+          }
+        },
+        {
+          "client_id": "841406691109-tdn8heloi0b85d3g78ilp3ef71vd2nb9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOhQo0N5Wmr5jOzWRS7wXiHUaDwqdvPIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841406691109-tdn8heloi0b85d3g78ilp3ef71vd2nb9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
