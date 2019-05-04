@@ -9,17 +9,87 @@
     <ImageView
         android:id="@+id/walk_through"
         android:layout_width="match_parent"
-        android:layout_height="360dp"
+        android:layout_height="300dp"
         android:src="@mipmap/ic_launcher"
         />
-    <Button
+    <RelativeLayout
+        android:id="@+id/mail_address_login_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/walk_through"
+        android:layout_marginTop="8dp"
+
+        >
+      <TextView
+          android:id="@+id/mail_address_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="メアド"
+          />
+      <EditText
+          android:id="@+id/mail_address_edit_text"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_toEndOf="@+id/mail_address_label"
+          android:layout_alignBaseline="@+id/mail_address_label"
+          android:layout_marginStart="16dp"
+          android:inputType="textEmailAddress"
+          />
+
+      <TextView
+          android:id="@+id/password_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/mail_address_label"
+          android:layout_marginTop="16dp"
+          android:text="パスワード"
+          />
+      <EditText
+          android:id="@+id/password_edit_text"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/password_label"
+          android:layout_toEndOf="@+id/password_label"
+          android:layout_marginStart="16dp"
+          android:inputType="textPassword"
+          />
+      <Button
+          android:id="@+id/mail_address_create_account_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/password_label"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="16dp"
+          android:text="メールアドレスで新規作成"
+          />
+      <Button
+          android:id="@+id/mail_address_login_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/mail_address_create_account_button"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="16dp"
+          android:text="メールアドレスログイン"
+          />
+    </RelativeLayout>
+
+
+    <com.facebook.login.widget.LoginButton
         android:id="@+id/facebook_login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/walk_through"
-        android:text="FaceBookログイン"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/mail_address_login_container"
+        />
+    <Button
+        android:id="@+id/facebook_signout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facebook_login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="サインアウト"
         />
   </RelativeLayout>
 </layout>
